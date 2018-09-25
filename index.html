@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hello!</title>
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter50448379 = new Ya.Metrika2({
-                    id:50448379,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/50448379" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" href="style.css">
+    <title>Formularz(Akademia108)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-    Hello!ddddddd
-    <div>ghbdtn</div>
-    <div>fghhjjj</div>
+    <div>
+        <form action="https://formspree.io/kosskill@gmail.com" method="POST">
+            <fieldset>
+                <legend><span class="number">1</span>Zapisz / Zapytaj się o kurs</legend>
+                <input type="text" name="name" placeholder="Imię *">
+                <input type="text" name="lastname" placeholder="Nazwisko *">
+                <input type="email" name="mail" placeholder="Twój adres E-mail *">
+                <input type="tel" name="phone" placeholder="Telefon *">
+                <label class="container">Mężczyzna
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Kobieta
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <label id="kraj">Wybierz miasto:</label>
+                <select name="select">
+                    <optgroup label="Polska">
+                        <option value="warszawa">Warszawa</option>
+                        <option value="krakow">Kraków</option>
+                        <option value="gdansk">Gdańsk</option>
+                    </optgroup>
+                    <optgroup label="USA">
+                        <option value="seattle">Seattle</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="austin">Austin</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span>Wyślij nam wiadomość</legend>
+                <textarea name="message" placeholder="...."></textarea>
+            </fieldset>
+            <label><input type="checkbox" />Wyrażam zgodę na przetwarzanie danych osobowych</label>
+            <input type="submit" value="Apply" />
+        </form>
+    </div>
 </body>
+
 </html>
