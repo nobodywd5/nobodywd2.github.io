@@ -21,7 +21,7 @@ body {
 
 @media screen and (min-width: 1170px) {
     #bg {
-        background: url(img/man-1.jpg) center;
+        background: url(man-1.jpg) center;
         height: 100vh;
     }
 
@@ -35,7 +35,7 @@ body {
 
 @media (min-width: 992px) and (max-width: 1170px) {
     #bg {
-        background: url(img/man-2.jpg) center;
+        background: url(man-2.jpg) center;
         height: 70vh;
         background-size: cover;
     }
@@ -50,7 +50,7 @@ body {
 
 @media screen and (max-width: 992px) {
     #bg {
-        background: url(img/man-1.jpg) center;
+        background: url(man-1.jpg) center;
         background-size: cover;
         height: 50vh;
     }
