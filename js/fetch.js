@@ -31,27 +31,6 @@ linkArray.forEach((eachLink) => {
         }
     })
 })
-                                                                   // --  //
-let nextBook = document.querySelector('#white-bg'); 
-let bookArray = [nextBook];
-bookArray.forEach((eLink) => {
-    eLink.addEventListener('click', (e) => {
-        switch (eLink) {
-               case nextBook:
-                fetchPage(eLink, 'anAutohagiography.html');
-                break;
-                fetchPage(eLink, 'theBookOfTheLaw.html');
-                break;
-                
-
-     }
-    })
-})
-
-
-
-
-
 
 function fetchPage(link, page) {
     let baseURL = `${window.location.protocol}//${window.location.hostname}`;
@@ -78,13 +57,28 @@ function fetchPage(link, page) {
                 }
             })
 
-             anime({
-                 targets: '.image-section',
-                 translateY: 2200,
-                 opacity: 0,
-                 easing: 'easeInExpo',
-                 duration: 700,
-             })
+            anime({
+                targets: '.image-section',
+                translateY: 2200,
+                opacity: 0,
+                easing: 'easeInExpo',
+                duration: 700,
+            })
+            anime({
+                targets: '.gallery-counter',
+                translateX: 5200,
+                opacity: 0,
+                easing: 'easeInExpo',
+                duration: 700,
+            })
+            anime({
+                targets: '.hamburger',
+                translateX: 1000,
+                opacity: 0,
+                easing: 'easeInExpo',
+                duration: 700,
+            })
+           
 
             setTimeout(function () {
                 document.querySelector('body').insertBefore(doc.querySelector('.new-content'), document.querySelector('.gallery-nav'));
@@ -103,6 +97,20 @@ function fetchPage(link, page) {
                     opacity: [0, 1],
                     easing: 'easeOutExpo',
                 })
-            }, 700);
+                anime({
+                    targets: '.gallery-counter',
+                    translateX: [0, 350],
+                    delay: (el, i) => 100 * i,
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                })
+                anime({
+                    targets: '.hamburger',
+                    translateX: [100, 0],
+                    delay: (el, i) => 100 * i,
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                })
+            }, 800);
         })
 }
