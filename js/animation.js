@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		.add({
 			targets: '.nav-wrapper',
-			width: ['0px', '1285px'],
+			width: ['0%', '100%'],
 		})
 		.add({
 			targets: '.logo',
-			width: ['0px', '230px'],
+			width: ['0%', '35%'],
 			offset: '-=500',
 		})
 		.add({

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aleister Crowley</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
@@ -16,6 +18,7 @@
     <script defer src="/js/animation.js"></script>
     <script defer src="/js/function.js"></script>
     <script defer src="/js/fetch.js"></script>
+    <script defer src="/js/nav.js"></script>
 </head>
 
 <body>
@@ -24,9 +27,11 @@
             <div class="img-logo"></div>
             <h1><a class="pdf-link-logo" href="#" id="biography-link">Aleister<br>Crowley</a></h1>
         </div>
+        <span id="js-toggle" class="toggle">☰</span>
+        <nav id="js-nav">
+                
 
-        <nav>
-            <a href="#" class="active" id="anAutohagiography-link">
+            <a href="#" class="active nav-link" id="anAutohagiography-link">
                 <div class="letter">A</div>
                 <div class="letter">n&nbsp</div>
                 <div class="letter">A</div>
@@ -45,7 +50,7 @@
                 <div class="letter">h</div>
                 <div class="letter">y</div>
             </a>
-            <a href="#" id="theBookOfTheLaw-link">
+            <a href="#" class="nav-link" id="theBookOfTheLaw-link">
                 <div class="letter">T</div>
                 <div class="letter">h</div>
                 <div class="letter">e&nbsp</div>
@@ -62,7 +67,7 @@
                 <div class="letter">a</div>
                 <div class="letter">w</div>
             </a>
-            <a href="#" id="moonchild-link">
+            <a href="#" class="nav-link" id="moonchild-link">
                 <div class="letter">M</div>
                 <div class="letter">o</div>
                 <div class="letter">o</div>
@@ -73,7 +78,7 @@
                 <div class="letter">l</div>
                 <div class="letter">d</div>
             </a>
-            <a href="#" id="theBookOfTheLies-link">
+            <a href="#" class="nav-link" id="theBookOfTheLies-link">
                 <div class="letter">T</div>
                 <div class="letter">h</div>
                 <div class="letter">e&nbsp</div>
@@ -91,7 +96,10 @@
                 <div class="letter">e</div>
                 <div class="letter">s</div>
             </a>
+
+
         </nav>
+
     </div>
 
     <div class="column-wrapper">
@@ -124,7 +132,7 @@
         </section>
 
         <section class="sidebar-section">
-            <a href="https://github.com/nobodywd5/nobodywd5.github.io">
+            <a href="#">
             <div class="hamburger">
                 <div class="ham-line ham-line-first"></div>
                 <div class="ham-line ham-line-second" id="short"></div>

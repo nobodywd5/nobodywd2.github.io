@@ -2,7 +2,7 @@
     width: 85px;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
+    /* background-color: #FFF; */
 }
 
 .hamburger {
@@ -10,10 +10,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     cursor: pointer;
     position: relative;
+    margin-top: 100px;
+
 }
 
 .hamburger div {
@@ -50,7 +52,7 @@
 
 
 
-
+/* 
 @media (min-width: 768px) and (max-width: 950px) {
     .social {
         margin-top: 40px;
@@ -61,7 +63,7 @@
     #gallery-headline {
         display: none;
     }
-}
+} */
 
 
 
@@ -82,4 +84,13 @@
 
 .social a:last-child:hover {
     color: #08A0E9;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .sidebar-section{
+        display: none;
+    }
+
 }

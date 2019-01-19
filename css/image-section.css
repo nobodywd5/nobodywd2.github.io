@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative; 
-    border-right: groove 4px #FFC001;
+    /* border-right: groove 4px #FFC001; */
 }
 
 
@@ -93,4 +93,13 @@
 }
 
 
+@media screen and (max-width: 600px){
 
+    .image-section{
+        width: 30%;
+    }
+    .gallery-counter{
+        display: none;
+    }
+
+}
